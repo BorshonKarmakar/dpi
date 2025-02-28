@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    width: 90%;
+    background-color: gainsboro;
+   
+}
+.all{
+    height: 1900px;
+    width: 1350px;
+    background-color: white;
+    margin-left: 10%;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-top: 20px;
+    border-bottom: 20px solid black;
+    
+}
+.all .part1{
+    width: 100%;
+    height: 300px;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    animation-name: part1;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+@keyframes part1 {
+    0%{
+        background-image: url(bg1.jpg);
+    }
+    25%{
+        background-image: url(bg2.jpg);
+    }
+    50%{
+        background-image: url(bg3.jpg);
+    }
+    75%{
+        background-image: url(bg4.jpg);
+    }
+    100%{
+        background-image: url(bg1.jpg);
+    }
+    
+}
+.all .part1 .logo{
+    display: flex;
+    margin-left: 80px;
+}
+.all .part1 .logo img{
+    height: 200px;
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.all .part1 .logo .dpi{
+    margin-top: 80px;
+    color: white;
+    
+}
+.all .part2 .dropdown{
+    background-color: blue;
+    
+}
+
+.all .part2 .dropdown ul{
+    display: flex;
+    
+    margin-left: 120px;
+}
+.all .part2 .dropdown ul li{
+    list-style: none;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    
+}
+.all .part2 .dropdown ul li::after{
+    content: "";
+    width: 0;
+    height: 100%;
+    position: absolute;
+    transition: .5s;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    z-index: -1;
+
+}
+.all .part2 .dropdown ul li:hover::after{
+    width: 100%;
+}
+
+/* .all .part2 .dropdown ul li:hover{
+    background-color: orange;
+    transition: .5s;
+    color: white;
+} */
+
+.all .part2 .dropdown ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(24, 23, 23);
+    
+}
+.all .part2 .dropdown ul li a:hover{
+    color: white;
+    transition: .5s;
+}
+.all .part2 .dropdown ul li ul{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: block;
+    visibility: hidden;
+   
+    
+}
+.all .part2 .dropdown ul li ul li{
+    list-style: none;
+    border: none;
+    height: 35px;
+    background-color: orange;
+    border: 1px solid black;
+    
+}
+.all .part2 .dropdown ul li ul li:hover{
+    transition: .5s;
+    background-color: rgb(222, 149, 15);
+}
+.all .part2 .dropdown ul li:hover ul{
+    transition: .2s;
+    visibility: visible;
+}
+
+
+.all .part2 .dropdown ul li ul li a{
+    text-decoration: none;
+    font-size: 15px;
+}
+.time{
+    text-align: center;
+}
+.time p{
+    font-size: 20px;
+    height: 30px;
+    text-shadow: 4px 5px 6px white;
+}
+.all .cst h1{
+   background-color: orange;
+   color: white;
+   font-family: cursive;
+   text-align: center;
+   margin-top: 20px;
+}
+.teachers{
+    margin-top: 20px;
+    margin-left: 140px;
+}
+.teachers .teacher{
+    display: flex;
+    margin-top: 20px;
+}
+.teachers .teacher .dpt{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: gainsboro;
+    margin-left: 20px;
+}
+
+.teachers .teacher img{
+    height: 250px;
+    width: 250px;
+}
+.lab{
+    margin-top: 25px;
+
+}
+.lab ol{
+    margin-left: 60px;
+}
+.lab ol li{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.afterchange{
+    text-align: center;
+    margin-top: 30px;
+}
+.afterchange .intro{
+    background-color: orange;
+    visibility: hidden;
+}
+.afterchange .intro h2{
+    color: white;
+    background-color: green;
+    padding-bottom: 20px;
+   box-sizing: border-box;
+   box-shadow: 4px 5px 4px 5px rgb(186, 76, 76);
+    border: 2px dotted white;
+    margin-top: 20px;
+    
+
+}
+.afterchange .intro p{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    
+}
+.routinepart{
+    display: flex;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+.routine{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.routine ul{
+    margin-top: 20px;
+}
+.routine ul li{
+    margin-top: 20px;
+
+}
+.routine ul li a{
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+}
+.routine ul li a:hover{
+    text-decoration: underline;
+}
